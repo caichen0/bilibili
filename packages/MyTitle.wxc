@@ -1,0 +1,23 @@
+<template>
+<!--logo -->
+ <navigator>
+  <image class=""></image>
+   </navigator>
+</template>
+<script>
+export default {
+  data: {
+    msg: "This is a test msg!"
+  },
+  methods: {
+    handleTap() {
+      console.log(this.data.msg);
+    }
+  }
+};
+</script>
+<style lang="less">
+.wx-test {
+  color: #f00;
+}
+</style>

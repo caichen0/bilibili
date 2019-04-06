@@ -1,0 +1,36 @@
+<template>
+ <MyTitle>home</MyTitle>
+</template>
+
+<script>
+export default {
+  config: {
+    usingComponents: {
+      MyTitle: "../../packages/MyTitle"
+    },
+    navigationBarTitleText: "哔哩哔哩",
+    backgroundColor: "#F4F4F4",
+    navigationBarTextStyle: "black"
+  },
+  data: {
+    isShow: false
+  },
+  starShow() {
+    this.setData({
+      isShow: true
+    });
+  }
+};
+</script>
+
+<style lang="less">
+.content {
+  .mix-flex-center();
+}
+.starContent {
+  padding: 50px 50px 0px 50px;
+}
+.buttonContent {
+  padding: 50px;
+}
+</style>
